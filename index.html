@@ -18,6 +18,7 @@
   --muted: #94a3b8;
 }
 
+/* BODY */
 body {
   font-family: "Poppins", system-ui, sans-serif;
   background: radial-gradient(circle at top, #22c55e55, #020617 55%, #1d4ed855);
@@ -74,10 +75,8 @@ body {
   font-size: 0.85rem;
 }
 
-/* HIDE SITE CONTENT */
-#site-content {
-  display: none;
-}
+/* HIDE SITE CONTENT INITIALLY */
+#site-content { display: none; }
 
 /* ================= HERO ================= */
 .hero {
@@ -123,7 +122,7 @@ body {
   color: transparent;
 }
 
-/* CONTACT LINKS */
+/* CONTACT */
 .links span { color: var(--muted); margin-right: 6px; }
 .links a { color: var(--blue); text-decoration: none; }
 
@@ -179,12 +178,15 @@ body {
   font-size: 0.85rem;
 }
 
-/* FOOTER */
+/* ================= FOOTER (FIXED VISIBILITY) ================= */
 footer {
+  background: #f8fafc;
+  color: #0f172a;
   text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.8rem;
-  color: var(--muted);
+  padding: 1.6rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-top: 1px solid #e5e7eb;
 }
 </style>
 </head>
@@ -249,7 +251,7 @@ footer {
 <section class="section">
   <h2 class="section-title">Professional Experience</h2>
   <div class="card pipeline">
-    <!-- TCS -->
+
     <div class="stage">
       <h3>Tata Consultancy Services (TCS) – DevOps Engineer <span>(May 2025 – Present)</span></h3>
       <ul>
@@ -277,6 +279,7 @@ footer {
         <li>Standardized Terraform module usage across pipelines</li>
       </ul>
     </div>
+
   </div>
 </section>
 
@@ -309,7 +312,8 @@ footer {
     <div class="skill">Mend (WhiteSource)</div>
     <div class="skill">Elastic Kibana</div>
     <div class="skill">Monitoring & Automation</div>
-    <div class="skill">Security Scanning</div>  </div>
+    <div class="skill">Security Scanning</div>
+  </div>
 </section>
 
 <footer>
@@ -318,7 +322,6 @@ footer {
 
 </div>
 
-<!-- JS -->
 <script>
   const ACCESS_PASSWORD = "devops123";
   const gate = document.getElementById("password-gate");
@@ -326,8 +329,6 @@ footer {
   const input = document.getElementById("passwordInput");
   const error = document.getElementById("error-msg");
   const btn = document.getElementById("accessBtn");
-
-  site.style.display = "none";
 
   function unlock() {
     if (input.value === ACCESS_PASSWORD) {
