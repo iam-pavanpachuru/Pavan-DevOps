@@ -182,7 +182,38 @@ footer {
 </style>
 </head>
 
+<script>
+  const ACCESS_PASSWORD = "devops123"; // change this
+
+  function checkPassword() {
+    const input = document.getElementById("passwordInput").value;
+    const error = document.getElementById("error-msg");
+
+    if (input === ACCESS_PASSWORD) {
+      document.getElementById("password-gate").style.display = "none";
+    } else {
+      error.style.display = "block";
+    }
+  }
+</script>
+
 <body>
+<!-- PASSWORD GATE -->
+<div id="password-gate">
+  <div class="gate-box">
+    <h2>Protected Portfolio</h2>
+    <p>Please enter the access password</p>
+
+    <input
+      type="password"
+      id="passwordInput"
+      placeholder="Enter password"
+    />
+    <button onclick="checkPassword()">Access</button>
+
+    <p id="error-msg">Incorrect password</p>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero">
