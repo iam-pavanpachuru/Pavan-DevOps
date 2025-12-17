@@ -6,28 +6,6 @@
 <title>Pavan Kalyan Pachuru | DevOps Engineer 👨‍💻</title>
 
 <link rel="stylesheet" href="style.css" />
-
-<script>
-  const ACCESS_PASSWORD = "devops123"; // 🔴 change this
-
-  function checkPassword() {
-    const input = document.getElementById("passwordInput").value;
-    const error = document.getElementById("error-msg");
-
-    if (input === ACCESS_PASSWORD) {
-      document.getElementById("password-gate").style.display = "none";
-      document.getElementById("site-content").style.display = "block";
-    } else {
-      error.style.display = "block";
-    }
-  }
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-      checkPassword();
-    }
-  });
-</script>
 </head>
 
 <body>
@@ -38,133 +16,129 @@
     <h2>Protected Portfolio</h2>
     <p>Please enter the access password</p>
 
-    <input type="password" id="passwordInput" placeholder="Enter password" />
-    <button onclick="checkPassword()">Access</button>
+    <input
+      type="password"
+      id="passwordInput"
+      placeholder="Enter password"
+    />
+
+    <button id="accessBtn">Access</button>
 
     <p id="error-msg">Incorrect password</p>
   </div>
 </div>
 
-<!-- SITE CONTENT (HIDDEN UNTIL AUTH) -->
+<!-- SITE CONTENT (HIDDEN UNTIL PASSWORD IS CORRECT) -->
 <div id="site-content">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="terminal">
-    <div class="terminal-header">
-      <div class="dot red"></div>
-      <div class="dot yellow"></div>
-      <div class="dot green"></div>
-    </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
 
-    <div class="terminal-body">
-      <div class="cmd">$ whoami</div>
-      <div class="output name">Pavan <span>Kalyan Pachuru</span></div>
+      <div class="terminal-body">
+        <div class="cmd">$ whoami</div>
+        <div class="output name">
+          Pavan <span>Kalyan Pachuru</span>
+        </div>
 
-      <div class="cmd">$ role</div>
-      <div class="output">DevOps Engineer | CI/CD | Cloud Automation</div>
+        <div class="cmd">$ role</div>
+        <div class="output">DevOps Engineer | CI/CD | Cloud Automation</div>
 
-      <div class="cmd">$ contact</div>
-      <div class="output links">
-        <span>Phone:</span>
-        <a href="tel:+917993602774">+91 79936 02774</a><br />
-        <span>Email:</span>
-        <a href="mailto:pavanpachuru1@gmail.com">pavanpachuru1@gmail.com</a><br />
-        <span>LinkedIn:</span>
-        <a href="https://www.linkedin.com/in/pavan-kalyan-pachuru-538a4016b/" target="_blank">
-          linkedin.com/in/pavan-kalyan-pachuru
-        </a>
+        <div class="cmd">$ contact</div>
+        <div class="output links">
+          <span>Phone:</span>
+          <a href="tel:+917993602774">+91 79936 02774</a><br />
+          <span>Email:</span>
+          <a href="mailto:pavanpachuru1@gmail.com">pavanpachuru1@gmail.com</a><br />
+          <span>LinkedIn:</span>
+          <a href="https://www.linkedin.com/in/pavan-kalyan-pachuru-538a4016b/" target="_blank">
+            linkedin.com/in/pavan-kalyan-pachuru
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SUMMARY -->
-<section class="section">
-  <h2 class="section-title">Summary</h2>
-  <div class="card">
-    DevOps Engineer with 4+ years of experience in automating and optimizing cloud
-    infrastructure. Strong expertise in CI/CD pipelines, Terraform, PowerShell,
-    GitHub Actions, and automated testing frameworks.
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="section">
-  <h2 class="section-title">Professional Experience</h2>
-
-  <div class="card pipeline">
-
-    <div class="stage">
-      <h3>Tata Consultancy Services (TCS) – DevOps Engineer <span>(May 2025 – Present)</span></h3>
-      <ul>
-        <li>Designed and automated CI/CD pipelines using Azure DevOps</li>
-        <li>Integrated Checkmarx and Mend (WhiteSource) security scanning tools</li>
-        <li>Migrated 7+ Azure DevOps repositories to GitHub</li>
-        <li>Administered Azure DevOps and GitHub organizations</li>
-        <li>Built reusable pipeline templates</li>
-        <li>Configured Elastic Kibana monitoring</li>
-      </ul>
+  <!-- SUMMARY -->
+  <section class="section">
+    <h2 class="section-title">Summary</h2>
+    <div class="card">
+      DevOps Engineer with 4+ years of experience in automating and optimizing
+      cloud infrastructure. Strong expertise in CI/CD pipelines, Terraform,
+      PowerShell, GitHub Actions, and automated testing frameworks.
     </div>
+  </section>
 
-    <div class="stage">
-      <h3>Accenture – DevOps Engineer <span>(Aug 2021 – May 2025)</span></h3>
-      <ul>
-        <li>Terraform automation for Azure & GCP</li>
-        <li>CI/CD pipelines for Azure IaaS & PaaS</li>
-        <li>Zero-touch testing with Pester & Selenium</li>
-        <li>ServiceNow integrated DevOps workflows</li>
-        <li>GitHub Actions for GCP BigQuery permissions</li>
-      </ul>
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="card pipeline">
+
+      <div class="stage">
+        <h3>TCS – DevOps Engineer <span>(May 2025 – Present)</span></h3>
+        <ul>
+          <li>Designed CI/CD pipelines using Azure DevOps</li>
+          <li>Integrated Checkmarx and Mend security scans</li>
+          <li>Migrated 7+ Azure DevOps repos to GitHub</li>
+          <li>Built reusable pipeline templates</li>
+          <li>Configured Elastic Kibana monitoring</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <h3>Accenture – DevOps Engineer <span>(Aug 2021 – May 2025)</span></h3>
+        <ul>
+          <li>Terraform automation for Azure & GCP</li>
+          <li>CI/CD pipelines for IaaS & PaaS</li>
+          <li>Zero-touch smoke testing (Pester & Selenium)</li>
+          <li>ServiceNow integrated DevOps workflows</li>
+        </ul>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Pavan Kalyan Pachuru • Built like a pipeline 🚀
+  </footer>
 
-<!-- TECH STACK -->
-<section class="section">
-  <h2 class="section-title">Tech Stack</h2>
-  <div class="skills">
-    <div class="skill">Azure DevOps</div>
-    <div class="skill">GitHub Actions</div>
-    <div class="skill">Terraform</div>
-    <div class="skill">PowerShell</div>
-    <div class="skill">Python</div>
-    <div class="skill">Azure</div>
-    <div class="skill">GCP</div>
-    <div class="skill">Docker</div>
-    <div class="skill">Ansible</div>
-    <div class="skill">Selenium</div>
-    <div class="skill">Pester</div>
-  </div>
-</section>
+</div>
 
-<!-- CERTIFICATIONS -->
-<section class="section">
-  <h2 class="section-title">Certifications</h2>
-  <div class="card">
-    <ul>
-      <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
-      <li>Site Reliability Engineering (SRE) – Accenture</li>
-    </ul>
-  </div>
-</section>
+<!-- JAVASCRIPT (MUST BE HERE) -->
+<script>
+  const ACCESS_PASSWORD = "devops123"; // 🔴 change this
 
-<!-- EDUCATION -->
-<section class="section">
-  <h2 class="section-title">Education</h2>
-  <div class="card">
-    <strong>Bachelor of Technology</strong><br />
-    Jagan’s College of Engineering & Technology<br />
-    Jawaharlal Nehru Technological University – 2020
-  </div>
-</section>
+  const gate = document.getElementById("password-gate");
+  const site = document.getElementById("site-content");
+  const input = document.getElementById("passwordInput");
+  const error = document.getElementById("error-msg");
+  const button = document.getElementById("accessBtn");
 
-<footer>
-  © 2025 Pavan Kalyan Pachuru • Built like a pipeline 🚀
-</footer>
+  // Safety: hide content on load
+  site.style.display = "none";
 
-</div> <!-- END site-content -->
+  function unlock() {
+    if (input.value === ACCESS_PASSWORD) {
+      gate.style.display = "none";
+      site.style.display = "block";
+    } else {
+      error.style.display = "block";
+    }
+  }
+
+  button.addEventListener("click", unlock);
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") unlock();
+  });
+</script>
 
 </body>
 </html>
