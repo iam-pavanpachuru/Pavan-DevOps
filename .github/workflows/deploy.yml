@@ -20,7 +20,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+      - name: Inject portfolio password
+        run: |
+          sed -i "s/__SITE_PASSWORD__/${{ secrets.PORTFOLIO_PASSWORD }}/g" index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
