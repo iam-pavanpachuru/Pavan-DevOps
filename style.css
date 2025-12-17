@@ -1,260 +1,33 @@
-/* ===============================
-   GLOBAL RESET & VARIABLES
-================================ */
 :root {
   --bg-main: #020617;
   --bg-card: rgba(15, 23, 42, 0.95);
   --bg-soft: rgba(30, 41, 59, 0.6);
-
   --primary: #22c55e;
   --secondary: #3b82f6;
   --accent: #a855f7;
-
   --text-main: #f9fafb;
   --text-muted: #94a3b8;
-
   --border-soft: #1f2937;
-  --radius-lg: 1.2rem;
-  --radius-sm: 0.7rem;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: "Poppins", system-ui, sans-serif;
-  color: var(--text-main);
   background: radial-gradient(circle at top, #22c55e55, var(--bg-main) 55%, #1d4ed855);
-  line-height: 1.7;
+  color: var(--text-main);
+  line-height: 1.65;
 }
 
-/* ===============================
-   HERO SECTION
-================================ */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2.5rem;
-}
+/* HIDE SITE CONTENT */
+#site-content { display: none; }
 
-.hero-content {
-  text-align: center;
-  max-width: 620px;
-}
-
-.tag {
-  display: inline-block;
-  padding: 0.35rem 1rem;
-  border-radius: 999px;
-  border: 1px solid #93c5fd;
-  background: rgba(15, 23, 42, 0.9);
-  font-size: 0.8rem;
-  margin-bottom: 0.9rem;
-}
-
-.hero h1 {
-  font-size: clamp(2.4rem, 4vw, 3.2rem);
-  line-height: 1.15;
-  margin-bottom: 0.7rem;
-}
-
-.hero h1 span {
-  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.subtitle {
-  font-size: 0.95rem;
-  color: #dbeafe;
-  margin-bottom: 1.6rem;
-}
-
-/* ===============================
-   BUTTONS
-================================ */
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-}
-
-.btn {
-  padding: 0.6rem 1.5rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  text-decoration: none;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.btn.primary {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #020617;
-  font-weight: 600;
-}
-
-.btn.primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px #22c55e55;
-}
-
-.btn.outline {
-  background: transparent;
-  border-color: #64748b;
-  color: #e5e7eb;
-}
-
-.btn.outline:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-/* ===============================
-   CONTENT AREA
-================================ */
-.content {
-  padding: 3rem 8% 4rem;
-}
-
-.card {
-  background: var(--bg-card);
-  border-radius: var(--radius-lg);
-  padding: 1.7rem 1.6rem;
-  margin-bottom: 1.6rem;
-  border: 1px solid var(--border-soft);
-  box-shadow: 0 18px 32px rgba(15, 23, 42, 0.9);
-}
-
-.card h2 {
-  font-size: 1.45rem;
-  margin-bottom: 0.7rem;
-  position: relative;
-  padding-left: 0.8rem;
-}
-
-.card h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 4px;
-  height: 20px;
-  border-radius: 8px;
-  background: linear-gradient(180deg, var(--secondary), var(--accent));
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #e5e7eb;
-  margin-bottom: 0.7rem;
-}
-
-/* ===============================
-   LISTS
-================================ */
-.card ul {
-  padding-left: 1.3rem;
-  font-size: 0.9rem;
-  color: #dbeafe;
-}
-
-.card ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* ===============================
-   EXPERIENCE
-================================ */
-.job {
-  margin-bottom: 1.3rem;
-}
-
-.job-title {
-  font-weight: 600;
-  font-size: 1.05rem;
-}
-
-.job-meta {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
-}
-
-/* ===============================
-   SKILLS GRID
-================================ */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.9rem;
-}
-
-.skills-grid div {
-  background: var(--bg-soft);
-  padding: 0.65rem 0.9rem;
-  border-radius: var(--radius-sm);
-  font-size: 0.9rem;
-  border: 1px solid #1e293b;
-}
-
-/* ===============================
-   HIGHLIGHT CARD
-================================ */
-.card.highlight {
-  background: radial-gradient(circle at top, #a855f755, var(--bg-main));
-  border-color: #4c1d95;
-}
-
-/* ===============================
-   FOOTER
-================================ */
-footer {
-  text-align: center;
-  margin-top: 4rem;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-/* ===============================
-   RESPONSIVE
-================================ */
-@media (max-width: 768px) {
-  .content {
-    padding: 2.5rem 6% 3rem;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    padding: 2rem 1.2rem;
-  }
-
-  .hero h1 {
-    font-size: 2.1rem;
-  }
-}
 /* PASSWORD GATE */
 #password-gate {
   position: fixed;
   inset: 0;
-  background: #020617;
+  background: var(--bg-main);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,33 +35,22 @@ footer {
 }
 
 .gate-box {
-  background: rgba(15, 23, 42, 0.95);
+  background: var(--bg-card);
   padding: 2rem;
   border-radius: 14px;
-  border: 1px solid #1f2937;
-  text-align: center;
+  border: 1px solid var(--border-soft);
   width: 320px;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
-}
-
-.gate-box h2 {
-  margin-bottom: 0.4rem;
-}
-
-.gate-box p {
-  font-size: 0.9rem;
-  color: #94a3b8;
-  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .gate-box input {
   width: 100%;
   padding: 0.6rem;
-  border-radius: 8px;
-  border: 1px solid #334155;
-  background: #020617;
-  color: #e5e7eb;
   margin-bottom: 0.8rem;
+  background: #020617;
+  border: 1px solid #334155;
+  color: white;
+  border-radius: 8px;
 }
 
 .gate-box button {
@@ -297,14 +59,86 @@ footer {
   border-radius: 999px;
   border: none;
   cursor: pointer;
-  font-weight: 600;
-  background: linear-gradient(135deg, #22c55e, #3b82f6);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #020617;
+  font-weight: 600;
 }
 
 #error-msg {
   display: none;
   color: #f87171;
   margin-top: 0.6rem;
-  font-size: 0.85rem;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.terminal {
+  background: #020617;
+  border-radius: 14px;
+  max-width: 820px;
+  width: 100%;
+  border: 1px solid var(--border-soft);
+}
+
+.terminal-header {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+}
+
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.red { background: #ef4444; }
+.yellow { background: #facc15; }
+.green { background: #22c55e; }
+
+.terminal-body { padding: 22px; font-family: monospace; }
+
+.cmd { color: var(--primary); }
+.output { color: #c7d2fe; margin-bottom: 12px; }
+
+.name span {
+  background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* SECTIONS */
+.section { padding: 1.6rem 8%; }
+
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+/* CARDS */
+.card {
+  background: var(--bg-card);
+  padding: 1.3rem;
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+}
+
+/* EXPERIENCE */
+.pipeline { display: grid; gap: 1rem; }
+.stage { border-left: 4px solid var(--primary); padding-left: 1rem; }
+
+/* SKILLS */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.8rem;
+}
+
+.skill {
+  background: var(--bg-soft);
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
 }
