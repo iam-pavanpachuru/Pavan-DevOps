@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fa;
+      background-color: #f4f6f8;
       margin: 0;
       padding: 0;
       color: #333;
@@ -29,15 +29,15 @@
     }
 
     h2 {
+      margin-top: 30px;
       border-bottom: 2px solid #2c3e50;
       padding-bottom: 5px;
-      margin-top: 30px;
       color: #2c3e50;
     }
 
     .contact a {
-      color: #1a73e8;
       text-decoration: none;
+      color: #1a73e8;
     }
 
     ul {
@@ -48,22 +48,35 @@
       font-weight: bold;
     }
 
-    .company {
-      color: #555;
-    }
-
     .date {
       float: right;
       color: #666;
     }
 
-    .clearfix {
-      clear: both;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table td {
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f5f7fa;
+    }
+
+    table td:first-child {
+      width: 35%;
+      font-weight: bold;
+      color: #2c3e50;
     }
 
     footer {
+      margin-top: 40px;
       text-align: center;
-      margin-top: 30px;
       font-size: 14px;
       color: #777;
     }
@@ -73,53 +86,91 @@
 <body>
   <div class="container">
 
+    <!-- Header -->
     <h1>Pavan Kalyan Pachuru</h1>
     <p class="contact">
       📞 +91 79936 02774 |
       📧 <a href="mailto:pavanpachuru1@gmail.com">pavanpachuru1@gmail.com</a> |
-      🔗 <a href="https://www.linkedin.com/in/pavan-kalyan-pachuru-538a4016b/" target="_blank">
-        LinkedIn Profile
-      </a>
+      🔗 <a href="https://www.linkedin.com/in/pavan-kalyan-pachuru-538a4016b/" target="_blank">LinkedIn</a>
     </p>
 
+    <!-- Summary -->
     <h2>Summary</h2>
     <p>
-      Focused DevOps Engineer with over 4 years of experience in automating and optimizing
-      cloud infrastructure. Expertise in CI/CD pipelines, Terraform, and automated testing
-      frameworks. Proven ability to enhance operational efficiency and deliver reliable,
-      secure software solutions.
+      Focused DevOps Engineer with over four years of hands-on experience in automating
+      and optimizing cloud infrastructure. Strong expertise in CI/CD pipelines,
+      Terraform, and automated testing frameworks. Passionate about improving operational
+      efficiency and delivering reliable, secure software solutions.
     </p>
 
-    <h2>Career Highlights</h2>
+    <!-- Career Summary -->
+    <h2>Career Summary</h2>
     <ul>
       <li>Automated Azure and GCP infrastructure using Terraform, PowerShell, and YAML.</li>
-      <li>Designed CI/CD pipelines with Azure DevOps and GitHub Actions.</li>
-      <li>Built reusable pipeline templates and PowerShell modules.</li>
-      <li>Developed automated testing frameworks using Pester and Selenium.</li>
+      <li>Designed and implemented CI/CD pipelines using Azure DevOps and GitHub Actions.</li>
+      <li>Developed reusable pipeline templates, scripts, and PowerShell modules.</li>
+      <li>Built automated testing frameworks using Pester and Selenium.</li>
       <li>Administered Azure DevOps and GitHub organizations.</li>
     </ul>
 
+    <!-- Technical Skills -->
     <h2>Technical Skills</h2>
-    <p>
-      Azure DevOps, GitHub Actions, CI/CD, Git, Azure Repos, Terraform, IaC,
-      PowerShell, Python, Shell Scripting, Azure, GCP, Ansible, Docker,
-      Azure AD, Key Vault, Azure Functions, Web Apps, ServiceNow Integration,
-      Selenium, Pester, Checkmarx, Mend, Elastic Kibana, Monitoring, Automation.
-    </p>
+    <table>
+      <tr>
+        <td>Build & CI/CD Tools</td>
+        <td>Azure DevOps, GitHub Actions</td>
+      </tr>
+      <tr>
+        <td>Version Control</td>
+        <td>Git, Azure Repos</td>
+      </tr>
+      <tr>
+        <td>Scripting</td>
+        <td>PowerShell, Shell, Python</td>
+      </tr>
+      <tr>
+        <td>Cloud Platforms</td>
+        <td>Microsoft Azure, Google Cloud Platform</td>
+      </tr>
+      <tr>
+        <td>Infrastructure as Code</td>
+        <td>Terraform</td>
+      </tr>
+      <tr>
+        <td>Configuration Management</td>
+        <td>Ansible</td>
+      </tr>
+      <tr>
+        <td>Azure Services</td>
+        <td>Azure AD, Storage, Key Vault, Function App, Web App</td>
+      </tr>
+      <tr>
+        <td>Automation & Testing</td>
+        <td>Pester, Selenium, Checkmarx, Mend (WhiteSource)</td>
+      </tr>
+      <tr>
+        <td>Container Management</td>
+        <td>Docker</td>
+      </tr>
+      <tr>
+        <td>Monitoring</td>
+        <td>Elastic Kibana</td>
+      </tr>
+    </table>
 
+    <!-- Experience -->
     <h2>Experience</h2>
 
     <p class="role">
       DevOps Engineer – Tata Consultancy Services (TCS)
       <span class="date">May 2025 – Present</span>
     </p>
-    <p class="company">Client: EY</p>
-    <div class="clearfix"></div>
+    <p><strong>Client:</strong> EY</p>
     <ul>
-      <li>Designed and automated CI/CD pipelines using Azure DevOps.</li>
-      <li>Integrated security scanning tools (Checkmarx, Mend).</li>
+      <li>Designed and automated CI/CD pipelines for application deployments.</li>
+      <li>Integrated security scanning tools like Checkmarx and Mend.</li>
       <li>Migrated 7+ Azure DevOps repositories to GitHub.</li>
-      <li>Built reusable pipeline templates for standard deployments.</li>
+      <li>Built reusable pipeline templates for standardized deployments.</li>
       <li>Configured Elastic Kibana monitoring.</li>
     </ul>
 
@@ -127,26 +178,28 @@
       DevOps Engineer – Accenture
       <span class="date">Aug 2021 – May 2025</span>
     </p>
-    <p class="company">Client: Nestlé</p>
-    <div class="clearfix"></div>
+    <p><strong>Client:</strong> Nestlé</p>
     <ul>
       <li>Automated Azure and GCP infrastructure provisioning.</li>
       <li>Built CI/CD pipelines for Azure IaaS and PaaS services.</li>
       <li>Developed zero-touch smoke testing frameworks.</li>
-      <li>Created GitHub Actions automations using Python for GCP BigQuery permissions.</li>
-      <li>Streamlined Terraform module usage across pipelines.</li>
+      <li>Created GitHub Actions automation using Python for GCP BigQuery permissions.</li>
+      <li>Standardized Terraform module usage across pipelines.</li>
     </ul>
 
+    <!-- Education -->
     <h2>Education</h2>
     <p>
       Bachelor of Technology<br />
       Jagan’s College of Engineering & Technology<br />
-      Jawaharlal Nehru Technological University (2020)
+      Jawaharlal Nehru Technological University – 2020
     </p>
 
+    <!-- Awards -->
     <h2>Awards</h2>
     <p>ACE Award – Accenture (Q1 FY25)</p>
 
+    <!-- Certifications -->
     <h2>Certifications</h2>
     <ul>
       <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
