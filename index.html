@@ -74,7 +74,7 @@ body {
   font-size: 0.85rem;
 }
 
-/* HIDE SITE CONTENT UNTIL AUTH */
+/* HIDE SITE CONTENT */
 #site-content {
   display: none;
 }
@@ -123,6 +123,10 @@ body {
   color: transparent;
 }
 
+/* CONTACT LINKS */
+.links span { color: var(--muted); margin-right: 6px; }
+.links a { color: var(--blue); text-decoration: none; }
+
 /* SECTIONS */
 .section { padding: 1.6rem 8%; }
 
@@ -152,6 +156,8 @@ body {
   margin-bottom: 1.2rem;
   box-shadow: 0 15px 30px rgba(0,0,0,0.55);
 }
+
+.card ul { padding-left: 1.2rem; }
 
 /* EXPERIENCE */
 .pipeline { display: grid; gap: 1.1rem; }
@@ -199,8 +205,6 @@ footer {
 <!-- SITE CONTENT -->
 <div id="site-content">
 
-<!-- 🔽 YOUR ENTIRE ORIGINAL CONTENT (UNCHANGED) 🔽 -->
-
 <!-- HERO -->
 <section class="hero">
   <div class="terminal">
@@ -212,13 +216,76 @@ footer {
     <div class="terminal-body">
       <div class="cmd">$ whoami</div>
       <div class="output name">Pavan <span>Kalyan Pachuru</span></div>
+
       <div class="cmd">$ role</div>
       <div class="output">DevOps Engineer 👨‍💻</div>
+
+      <div class="cmd">$ contact</div>
+      <div class="output links">
+        <span>Phone:</span>
+        <a href="tel:+917993602774">+91 79936 02774</a><br />
+        <span>Email:</span>
+        <a href="mailto:pavanpachuru1@gmail.com">pavanpachuru1@gmail.com</a><br />
+        <span>LinkedIn:</span>
+        <a href="https://www.linkedin.com/in/pavan-kalyan-pachuru-538a4016b/" target="_blank">
+          linkedin.com/in/pavan-kalyan-pachuru
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- (All your remaining sections stay exactly the same) -->
+<!-- SUMMARY -->
+<section class="section">
+  <h2 class="section-title">Summary</h2>
+  <div class="card">
+    Focused DevOps Engineer with 4+ years of experience in automating and optimizing
+    cloud infrastructure. Strong expertise in CI/CD pipelines, Terraform, PowerShell,
+    GitHub Actions, and automated testing frameworks.
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <h2 class="section-title">Professional Experience</h2>
+  <div class="card pipeline">
+    <!-- TCS -->
+    <div class="stage">
+      <h3>Tata Consultancy Services (TCS) – DevOps Engineer</h3>
+      <ul>
+        <li>Designed and automated CI/CD pipelines using Azure DevOps</li>
+        <li>Integrated Checkmarx and Mend security scanning tools</li>
+        <li>Migrated 7+ Azure DevOps repositories to GitHub</li>
+      </ul>
+    </div>
+    <!-- Accenture -->
+    <div class="stage">
+      <h3>Accenture – DevOps Engineer</h3>
+      <ul>
+        <li>Automated Azure and GCP infrastructure using Terraform</li>
+        <li>Zero-touch smoke testing with Pester and Selenium</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="section">
+  <h2 class="section-title">Tech Stack</h2>
+  <div class="skills">
+    <div class="skill">Azure DevOps</div>
+    <div class="skill">GitHub Actions</div>
+    <div class="skill">Terraform</div>
+    <div class="skill">PowerShell</div>
+    <div class="skill">Python</div>
+    <div class="skill">Azure</div>
+    <div class="skill">GCP</div>
+    <div class="skill">Docker</div>
+    <div class="skill">Ansible</div>
+    <div class="skill">Selenium</div>
+    <div class="skill">Pester</div>
+  </div>
+</section>
 
 <footer>
   © 2025 Pavan Kalyan Pachuru • Built like a pipeline 🚀
@@ -226,10 +293,9 @@ footer {
 
 </div>
 
-<!-- JS (CORRECT POSITION) -->
+<!-- JS -->
 <script>
   const ACCESS_PASSWORD = "devops123";
-
   const gate = document.getElementById("password-gate");
   const site = document.getElementById("site-content");
   const input = document.getElementById("passwordInput");
