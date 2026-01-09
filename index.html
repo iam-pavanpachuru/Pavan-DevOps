@@ -1,162 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pavan Kalyan Pachuru | DevOps Engineer 👨‍💻</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <title>Pavan Kalyan Pachuru | DevOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Typed -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 
-<!-- PASSWORD GATE -->
-<div id="password-gate">
-  <div class="gate-box">
-    <h2>Protected Portfolio</h2>
-    <p>Please enter the access password</p>
-    <input type="password" id="passwordInput" placeholder="Enter password" />
-    <button id="accessBtn">Access</button>
-    <p id="error-msg">Incorrect password</p>
-  </div>
-</div>
-
-<!-- SITE CONTENT -->
-<div id="site-content">
+<header class="navbar">
+  <div class="logo">Pavan</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certs">Awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="terminal">
-    <div class="terminal-header">
-      <div class="dot red"></div>
-      <div class="dot yellow"></div>
-      <div class="dot green"></div>
-    </div>
-    <div class="terminal-body">
-      <div class="cmd">$ whoami</div>
-      <div class="output name">Pavan <span>Kalyan Pachuru</span></div>
+<section id="home" class="hero">
+  <div class="card hero-card">
+    <h1>Pavan Kalyan Pachuru</h1>
+    <h2><span id="typed"></span></h2>
+    <p>
+      I am a hardworking, honest individual, always willing to learn new skills. Quite friendly, helpful and polite, have a good sense of humor. To fulfill my object, I am outgoing and tactful and able to listen effectively when solving problems.
+    </p>
 
-      <div class="cmd">$ role</div>
-      <div class="output">DevOps Engineer 👨‍💻</div>
-
-      <div class="cmd">$ contact</div>
-      <div class="output links">
-        <span>Phone:</span>
-        <a href="tel:+917993602774">+91 79936 02774</a><br />
-        <span>Email:</span>
-        <a href="mailto:pavanpachuru1@gmail.com">pavanpachuru1@gmail.com</a><br />
-        <span>LinkedIn:</span>
-        <a href="https://www.linkedin.com/in/pavan-kalyan-pachuru-538a4016b/" target="_blank">
-          linkedin.com/in/pavan-kalyan-pachuru
-        </a>
-      </div>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn primary">Contact Me</a>
+      <a href="assets/PavanKalyanPachuru.pdf" download class="btn outline">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
     </div>
   </div>
 </section>
 
-<!-- SUMMARY -->
-<section class="section">
-  <h2 class="section-title">Summary</h2>
+<!-- ABOUT -->
+<section id="about" class="section">
   <div class="card">
-    Focused DevOps Engineer with 4+ years of experience in automating and optimizing
-    cloud infrastructure. Strong expertise in CI/CD pipelines, Terraform, PowerShell,
-    GitHub Actions, and automated testing frameworks.
+    <h3>About Me</h3>
+    <p>
+      Focused DevOps Engineer specializing in CI/CD pipelines, Terraform,
+      GitHub Actions, Azure DevOps, and automated testing.
+      Passionate about automation, reliability, and scalable cloud solutions.
+    </p>
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="section">
+  <div class="card">
+    <div class="info-grid">
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> +91 7993602774</li>
+        <li><i class="fa-solid fa-envelope"></i> pavanpachuru1@gmail.com</li>
+        <li>
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/iam-pavanpachuru" target="_blank">
+            GitHub Profile
+        </a>
+        </li>
+
+      </ul>
+      <ul>
+        <li><i class="fa-solid fa-graduation-cap"></i> B.Tech</li>
+        <li><i class="fa-solid fa-briefcase"></i> DevOps Engineer</li>
+        <li><i class="fa-solid fa-location-dot"></i> India</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="card">
+    <h3>Skills</h3>
+    <div class="skills-grid">
+      <span>Azure DevOps</span><span>GitHub Actions</span><span>Terraform</span>
+      <span>PowerShell</span><span>Python</span><span>Azure</span>
+      <span>GCP</span><span>Docker</span><span>Ansible</span>
+      <span>Azure AD</span><span>ServiceNow</span><span>Selenium</span>
+      <span>Pester</span><span>Checkmarx</span><span>Mend</span>
+      <span>Elastic Kibana</span>
+    </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="section">
-  <h2 class="section-title">Professional Experience</h2>
-  <div class="card pipeline">
+<section id="experience" class="section">
+  <div class="card">
+    <h3>Experience</h3>
 
-    <div class="stage">
-      <h3>Tata Consultancy Services (TCS) – DevOps Engineer <span>(May 2025 – Present)</span></h3>
+    <div class="experience-item">
+      <h4>Tata Consultancy Services (TCS)</h4>
+      <span>DevOps Engineer | May 2025 – Present | Client: EY</span>
       <ul>
-        <li>Designed and automated CI/CD pipelines using Azure DevOps</li>
-        <li>Integrated Checkmarx and Mend (WhiteSource) security scanning tools</li>
-        <li>Migrated 7+ Azure DevOps repositories to GitHub with zero issues</li>
-        <li>Administered Azure DevOps and GitHub organizations</li>
-        <li>Built reusable pipeline templates for standardized deployments</li>
-        <li>Guided teams on GitHub best practices and workflows</li>
-        <li>Configured Elastic Kibana monitoring for application availability</li>
-        <li>Troubleshot GitHub Actions workflow failures</li>
+        <li>Designed and automated CI/CD pipelines</li>
+        <li>Integrated security scanning</li>
+        <li>Migrated repositories to GitHub</li>
+        <li>Built reusable pipeline templates</li>
       </ul>
     </div>
 
-    <div class="stage">
-      <h3>Accenture – DevOps Engineer <span>(Aug 2021 – May 2025)</span></h3>
+    <div class="experience-item">
+      <h4>Accenture</h4>
+      <span>DevOps Engineer | Aug 2021 – May 2025 | Client: Nestle</span>
       <ul>
-        <li>Automated Azure and GCP infrastructure using Terraform and PowerShell</li>
-        <li>Designed CI/CD pipelines for Azure IaaS and PaaS services</li>
-        <li>Developed reusable Azure DevOps and GitHub Actions templates</li>
-        <li>Built zero-touch smoke testing framework using Pester and Selenium</li>
-        <li>Automated ServiceNow ticket creation and Azure DevOps bug logging</li>
-        <li>Built GitHub Actions automation to manage GCP BigQuery permissions</li>
-        <li>Maintained security-compliant DevOps workflows</li>
-        <li>Standardized Terraform module usage across pipelines</li>
+        <li>Automated Azure & GCP infrastructure</li>
+        <li>Built CI/CD pipelines</li>
+        <li>Zero-touch smoke testing automation</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<!-- AWARDS & CERTIFICATIONS -->
+<section id="certs" class="section">
+  <div class="card">
+
+    <!-- Certifications -->
+    <h3>
+      <i class="fa-solid fa-certificate cert-icon"></i>
+      Certifications
+    </h3>
+    <ul class="cert-list">
+      <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
+      <li>Site Reliability Engineering (SRE) Training</li>
+    </ul>
+
+    <!-- Awards -->
+    <h3 class="award-heading">
+      <i class="fa-solid fa-trophy award-icon"></i>
+      Awards
+    </h3>
+    <ul class="award-list">
+      <li>ACE Award – Accenture Q1 FY25</li>
+      <li>Star of the Month Award – TCS (Dec 2025)</li>
+    </ul>
 
   </div>
 </section>
 
-<!-- TECH STACK -->
-<section class="section">
-  <h2 class="section-title">Tech Stack</h2>
-  <div class="skills">
-    <div class="skill">Azure DevOps</div>
-    <div class="skill">GitHub Actions</div>
-    <div class="skill">CI/CD Pipelines</div>
-    <div class="skill">Git</div>
-    <div class="skill">Azure Repos</div>
-    <div class="skill">Terraform</div>
-    <div class="skill">Infrastructure as Code (IaC)</div>
-    <div class="skill">PowerShell</div>
-    <div class="skill">Python</div>
-    <div class="skill">Shell Scripting</div>
-    <div class="skill">Microsoft Azure</div>
-    <div class="skill">Google Cloud Platform (GCP)</div>
-    <div class="skill">Ansible</div>
-    <div class="skill">Docker</div>
-    <div class="skill">Azure Active Directory (Azure AD)</div>
-    <div class="skill">Azure Storage</div>
-    <div class="skill">Azure Key Vault</div>
-    <div class="skill">Azure Functions</div>
-    <div class="skill">Azure Web Apps</div>
-    <div class="skill">Selenium</div>
-    <div class="skill">Pester</div>
-    <div class="skill">Checkmarx</div>
-    <div class="skill">Mend (WhiteSource)</div>
-    <div class="skill">Elastic Kibana</div>
-    <div class="skill">Monitoring & Automation</div>
-    <div class="skill">Security Scanning</div>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="card contact-card">
+    <h3>Contact</h3>
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:pavanpachuru1@gmail.com">pavanpachuru1@gmail.com</a>
+    </p>
+    <p>
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://linkedin.com/in/pavan-kalyan-pachuru-538a4016b/" target="_blank">
+        LinkedIn Profile
+      </a>
+    </p>
   </div>
 </section>
 
 <footer>
-  © 2025 Pavan Kalyan Pachuru • Built like a pipeline 🚀
+  © 2026 Pavan Kalyan Pachuru
 </footer>
 
-</div>
-
-<script>
-  const ACCESS_PASSWORD = "__SITE_PASSWORD__";
-  const gate = document.getElementById("password-gate");
-  const site = document.getElementById("site-content");
-  const input = document.getElementById("passwordInput");
-  const error = document.getElementById("error-msg");
-  const btn = document.getElementById("accessBtn");
-
-  function unlock() {
-    if (input.value === ACCESS_PASSWORD) {
-      gate.style.display = "none";
-      site.style.display = "block";
-    } else {
-      error.style.display = "block";
-    }
-  }
-
-  btn.addEventListener("click", unlock);
-  input.addEventListener("keydown", e => e.key === "Enter" && unlock());
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
